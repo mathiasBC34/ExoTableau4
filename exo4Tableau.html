@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            border: 1px solid black;
+            width: fit-content;
+        }
+        table { 
+        
+            border-collapse: collapse;
+        
+            }
+        table, th, td {
+            border: 1px solid black;
+            }
+        tfoot{
+        
+            color:blue;
+        
+            }
+        </style>
+</head>
+<!--exemple d'abréviation pour l'écriture du tableau ex: table>(thead>th*4)+(tbody>tr*4>td*4)+(tfoot>tr>td*2)-->
+
+<body>
+    <table>
+        <caption>
+            Calcul de la moyenne
+        </caption>
+        <thead>
+            <th>Matière</th>
+            <th>Note par Matière</th>
+            <th>Coefficient</th>
+            <th>Note Coefficient</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>mathematique</td>
+                <td>17</td>
+                <td>4</td>
+                <td>68</td>
+            </tr>
+            <tr>
+                <td>physique</td>
+                <td>15</td>
+                <td>3</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>informatique</td>
+                <td>16</td>
+                <td>2</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td colspan="2">totals</td>
+                <td>9</td>
+                <td>145</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Moyenne</td>
+                <td>16:02</td>
+            </tr>
+        </tfoot>
+        </caption>
+    </table>
+</body>
+
+</html>
